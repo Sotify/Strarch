@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
   
   def create
-    Post.create(post_params)
+    Post.create(name: post_params[:name], title: post_params[:title], image: post_params[:image], text: post_params[:text], user_id: current_user.id)
   end
   
   private
