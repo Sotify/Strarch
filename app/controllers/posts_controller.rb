@@ -10,12 +10,12 @@ class PostsController < ApplicationController
   end
   
   def create
-    Post.create(name: post_params[:name], title: post_params[:title], image: post_params[:image], text: post_params[:text], user_id: current_user.id)
+    Post.create(title: post_params[:title], image: post_params[:image], text: post_params[:text], user_id: current_user.id)
   end
   
   private
   def post_params
-    params.permit(:name, :title, :image, :text)
+    params.permit(:title, :image, :text)
   end
   
   def move_to_index
