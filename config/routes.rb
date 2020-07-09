@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'posts' => 'posts#index'
   get 'posts/new' => 'posts#new'
   post 'posts' => 'posts#create'
+  delete 'posts/:id' => 'posts#destroy'
   get 'users/:id' => 'users#show'
 end
