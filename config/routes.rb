@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   patch 'posts/:id' => 'posts#update'
   get 'posts/:id/edit' => 'posts#edit'
   get 'users/:id' => 'users#show'
+  get 'posts/:id' => 'posts#show'
 end
