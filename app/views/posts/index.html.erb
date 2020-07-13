@@ -4,6 +4,9 @@
       <% if user_signed_in? && current_user.id == post.user_id %>
         <ul class="more_list">
           <li>
+            <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
+          </li>
+          <li>
             <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
           </li>
         </ul>
