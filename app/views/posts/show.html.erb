@@ -17,4 +17,12 @@
         </a>
       </span>
   </div>
+  <div class="container">
+    <% if current_user %>
+      <%= form_tag("/posts/#{@post.id}/comments", method: :post) do %>
+        <textarea name= "text" placeholder="コメントする" rows="2" cols="30"></textarea>
+        <input type="submit" value="SENT">
+      <% end %>
+    <% end %>
+  </div>
 </div>
