@@ -34,6 +34,10 @@ class PostsController < ApplicationController
     @comments = @post.comments.includes(:user)
   end
   
+  def search
+    @posts = Post.search(params[:search]) 
+  end
+  
   private
   def post_params
     params.permit(:title, :image, :text)
