@@ -1,0 +1,7 @@
+<p>検索</p>
+<%= form_tag(search_path,:method => 'get') do %>
+<input class="search__query" name="keyword" placeholder="作品名で検索" type="text" value=""><button class="btn-search" title="検索" type="submit"><i class="icon-search"></i></button></input>
+<% end %>
+  <%= text_field_tag :search %>
+  <%= submit_tag 'Search', :name => nil %>
+<% end %>

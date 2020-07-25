@@ -1,0 +1,88 @@
+.btn-square-pop {
+  position: center;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #000;
+  background: #FF0;/*背景色*/
+  border-bottom: solid 2px #FFCC00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+
+.btn-square-pop:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+h1 {
+  text-align: center;
+}
+
+body { 
+  background-image: -webkit-radial-gradient(50% 150%, #787B7D 5%, #4B5052 100%);
+  background-image: radial-gradient(50% 150%, #787B7D 5%, #4B5052 100%); 
+}
+
+
+.user__info {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.button{
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.grid-6 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.post {
+    width: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+h3,h4 {
+  color: yellow;
+}
+
+.more_list {
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+li {
+  color: yellow;
+}
+
+.name {
+  color: #fff;
+}
+
